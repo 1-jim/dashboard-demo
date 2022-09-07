@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  dashboard:
+    image: dashdemo:latest
+    container_name: dashdemo1
+    hostname: dashdemo1
+    ports:
+      - 8888:80
+    networks:
+      - network
+networks:
+  network:
+    driver: bridge

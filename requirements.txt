@@ -1,0 +1,14 @@
+pip
+python-dotenv
+wheel
+dash
+flask
+gunicorn
+dash-core-components
+dash-html-components
+dash-renderer
+dash_bootstrap_components
+pandas
+numpy
+plotly
+openpyxl
