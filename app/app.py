@@ -101,7 +101,7 @@ app.layout = html.Div(
 @app.callback(Output("tab-content", "children"), [Input("tabs", "active_tab"), Input("store", "data")])
 def render_tab_content(active_tab, data):
     if active_tab and data is not None:
-        print(data)
+        #print(data)
         df = getData()
         if active_tab == 'Species':
             return dcc.Graph(figure=figSpecies(df), id='Species', style={'height': '700px'})
@@ -157,7 +157,7 @@ def figStates(df):
 
 def getData():
     df = SOURCE.processSourceData()
-    print(df)
+    #print(df)
     return (df)
 
 

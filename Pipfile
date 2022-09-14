@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+python-dotenv = "*"
+dash = "*"
+flask = "*"
+gunicorn = "*"
+dash-core-components = "*"
+dash-html-components = "*"
+dash-renderer = "*"
+dash-bootstrap-components = "*"
+pandas = "*"
+numpy = "*"
+plotly = "*"
+openpyxl = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"

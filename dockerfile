@@ -4,6 +4,7 @@ RUN apt-get install nano
 RUN pip install --upgrade pip
 RUN mkdir wd
 WORKDIR /wd
-COPY requirements.txt
+COPY requirements.txt .
+RUN pip install -r requirements.txt
 COPY app/ ./
 CMD gunicorn -b 0.0.0.0:80 app:server
