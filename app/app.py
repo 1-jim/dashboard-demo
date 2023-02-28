@@ -10,6 +10,8 @@ import flask
 from datetime import datetime
 import SourceIngest as SOURCE
 
+external_css=['assets/style.css'] #ditched assets/style.css in favor of simple bootstrap
+
 server = flask.Flask(__name__)
 app = dash.Dash(
     __name__, server=server,
@@ -17,11 +19,11 @@ app = dash.Dash(
 )
 app.config.suppress_callback_exceptions = True
 
-app.title = 'DASHBOARD DEMO'
-_version = '0.1 DEMO'
-_pageTitle = 'Birdstrikes Data'
+app.title = 'SIMPLE DASHBOARD DEMO'
+_version = '0.2 DEMO'
+_pageTitle = 'Birdstrikes Data (static source)'
 _pageSubTitle = app.title
-_visDescription = '* WORK IN PROGRESS *'
+_visDescription = '* Python app using Dash and Ploty - deployed to Docker swarm * '
 # Tabs items to visualise from the datasource - testing with vega airports
 _chartCollection = ['Species', 'States']
 
